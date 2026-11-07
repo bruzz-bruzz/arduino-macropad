@@ -33,8 +33,6 @@ void loop() {
     delay(50);
     Keyboard.releaseAll();
     delay(200);
-    Keyboard.println("git push");
-    delay(200);
   }
   lastState3 = currentState3;
   bool currentState4 = digitalRead(button4);
