@@ -1,47 +1,14 @@
-# Arduino Macro Pad
+# Macro Pad Project
 
-A simple, 4-button custom HID macro pad built with an Arduino Pro Micro (or any ATmega32U4 board) to automate keyboard and Git workflows.
+A custom HID macro pad built with an Arduino Pro Micro to automate keyboard and Git workflows.
 
-## Features
+## Project Structure
 
-The macro pad features 4 mechanical switches mapped to the following functions:
+- [**Arduino Firmware & Hardware**](./arduino/): Firmware (`code.ino`) and 3D enclosure files.
+- [**Frontend Visualizer**](./frontend/): React application for 3D visualization.
 
-| Button Pin | Function |
-| :--- | :--- |
-| **16** | Toggle Terminal (`Ctrl` + `Shift` + `` ` ``) |
-| **3** | Minimize/Restore Desktop (`Win` + `D`) and run `git push` |
-| **5** | Run `git push` |
-| **10** | Run `git add .` and `git commit` |
-
-> [!NOTE]
-> The current implementation relies on keyboard emulation. Ensure the terminal or appropriate application is focused for these commands to execute correctly.
-
-## Hardware Requirements
-
-- **Microcontroller:** Arduino Pro Micro (ATmega32U4 required for native USB HID support).
-- **Switches:** 4x Mechanical switches (Cherry MX style).
-- **Enclosure:** 3D-printed parts (`keycase.stl` and `keyplate.stl`).
-
-## Wiring Diagram
-
-Connect each switch between the designated digital pin and Ground (GND). The code uses `INPUT_PULLUP`, so no external resistors are needed.
-
-| Component | Pin |
-| :--- | :--- |
-| Button 1 | 16 |
-| Button 2 | 3 |
-| Button 3 | 5 |
-| Button 4 | 10 |
-| Common | GND |
-
-## Software Setup
-
-1. **Prerequisites:** Install the [Arduino IDE](https://www.arduino.cc/en/software).
-2. **Library:** Install the `HID-Project` library:
-   - In Arduino IDE, go to **Sketch** -> **Include Library** -> **Manage Libraries...**
-   - Search for **HID-Project** and install the one by NicoHood.
-3. **Board Configuration:**
-   - Select your board (e.g., **Arduino Leonardo** or **Arduino Micro**).
-4. **Upload:**
-   - Open `code.ino`.
-   - Connect your board and click **Upload**.
+## Overview
+The project consists of:
+1. **Firmware**: Arduino code running on an ATmega32U4 board, mapping 4 physical buttons to specific actions.
+2. **Hardware**: 3D-printed enclosure designed to house the switches and controller.
+3. **Web Interface**: React application to visualize the enclosure parts in 3D using React Three Fiber.
