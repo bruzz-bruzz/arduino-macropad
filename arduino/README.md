@@ -31,6 +31,10 @@ This folder contains the core implementation for the macro pad.
 
 ## Demos
 
-[Demo1](demo1.jpeg)
+[Demo Gif](demo4.gif)
 
-[Demo2](demo2.jpeg)
+[Showcase1](demo1.jpeg)
+
+[Showcase2](demo2.jpeg)
+
+[Showcase3](demo3.jpeg)
