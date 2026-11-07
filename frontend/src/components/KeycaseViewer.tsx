@@ -5,14 +5,6 @@ import keycaseUrl from '../assets/keycase.stl';
 import { Link } from 'react-router-dom';
 import './App.css'
 import Github from './Github'
-<Canvas camera={{ position: [0, 0, 100], fov: 50 }}>
-        <ambientLight intensity={0.5} />
-        <directionalLight position={[10, 10, 5]} intensity={1} />
-        <Stage preset="upfront" intensity={1} environment="city">
-          <Model url={keycaseUrl} color="orange" />
-        </Stage>
-        <OrbitControls makeDefault />
-      </Canvas>
 export default function KeycaseViewer() {
   return (
     <div className="w-full h-screen bg-slate-950 relative text-slate-100">

@@ -14,8 +14,6 @@ export default function Model({
   rotation?: [number, number, number];
 }) {
   const geometry = useLoader(STLLoader, url);
-  
-  // Convert degrees to radians for rotation
   const rotationRad = rotation.map(deg => THREE.MathUtils.degToRad(deg)) as [number, number, number];
 
   return (
