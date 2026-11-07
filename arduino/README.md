@@ -24,3 +24,13 @@ This folder contains the core implementation for the macro pad.
 | **5** | - | 1 | USB Cable | Micro-USB | Data-capable cable (not charge-only) to connect to the PC |
 | **6** | - | 1 | Enclosure / Perfboard | Custom | 3D printed case, acrylic plates, or standard prototyping perfboard |
 | **7** | - | - | Hook-up Wire | 24 AWG (Solid) | For point-to-point wiring (if not using a custom PCB) |
+
+## Schematic
+
+[Schematic](schematic.svg)
+
+## Demos
+
+[Demo1](demo1.jpeg)
+
+[Demo2](demo2.jpeg)
